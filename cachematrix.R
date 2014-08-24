@@ -4,7 +4,7 @@
 ## Write a short comment describing this function
 
 makeCacheMatrix <- function(x = matrix()) {
-
+##function to create the matrix:input must be square matrix
   m <- NULL
   set <- function(y) {
     x <<- y
@@ -22,7 +22,8 @@ makeCacheMatrix <- function(x = matrix()) {
 ## Write a short comment describing this function
 
 cacheSolve <- function(x, ...) {
-        ## Return a matrix that is the inverse of 'x'
+
+  ##this function returnx the inverse of the matrix returned by the makeCacheMatrix function
   m <- x$getsolve()
   if(!is.null(m)) {
     message("getting inverse of matrix")
